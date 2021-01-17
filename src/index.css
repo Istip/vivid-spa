@@ -6,7 +6,34 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  background-color: #111122;
-  color: #f1f1f1;
-  transition: background-color 0.5s ease;
+  line-height: 1.5;
+}
+
+hr {
+  border: 1px solid #f1f1f16e;
+  width: 128px;
+  margin: 32px auto 32px auto;
+}
+
+.container {
+  padding: 24px 48px;
+}
+
+.fa-7x {
+  margin: 32px 0 32px 0;
+}
+
+.fa-3x {
+  margin: 16px 0 16px 0;
+}
+
+.logo {
+  padding-top: 24px;
+  position: absolute;
+  width: 100%;
+}
+
+.logo img {
+  width: 32px;
+  height: auto;
 }
