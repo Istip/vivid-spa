@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import styled from "styled-components"
 
-function App() {
+const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  color: #f1f1f1;
+`
+
+const Cell = styled.div`
+  width: 25%;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: ${(props) => props.hover};
+  }
+`
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <Cell hover={"#e56b6f"}>1</Cell>
+      <Cell hover={"#b56576"}>1</Cell>
+      <Cell hover={"#6d597a"}>1</Cell>
+      <Cell hover={"#355070"}>1</Cell>
+    </Container>
+  )
 }
 
-export default App;
+export default App
